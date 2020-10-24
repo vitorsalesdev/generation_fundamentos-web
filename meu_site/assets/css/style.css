@@ -14,7 +14,7 @@
 .h-container {
   background-color: rgb(0, 0, 0);
   color: white;
-  flex-flow: wrap;
+  flex-wrap: wrap;
   font-family: "Poppins", sans-serif;
   padding-top: 35px;
   padding-bottom: 60px;

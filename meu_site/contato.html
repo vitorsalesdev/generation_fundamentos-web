@@ -25,18 +25,22 @@
         <div>
             <form>
                 <label for="nome">Nome:</label><br>
-                <input type="text" id="nome">
+                <input type="text" id="nome" onkeyup="validarNome()">
+                <div id="txtNome"></div>
                 <br>
                 <label for="email">Email:</label><br>
-                <input type="email" id="email">
+                <input type="email" id="email" onkeyup="validarEmail()">
+                <div id="txtEmail"></div>
                 <br>
                 <label for="assunto">Assunto:</label><br>
-                <input type="text" id="assunto">
+                <input type="text" id="assunto" onkeyup="validarAssunto()">
+                <div id="txtAssunto"></div> 
                 <br>
                 <label for="mensagem">Mensagem:</label><br>
-                <textarea name="" id="" cols="40" rows="10"></textarea>
+                <textarea name="" id="mensagem" cols="40" rows="10" onkeyup="validarMensagem()"></textarea>
+                <div id="txtMensagem"></div> 
                 <br>
-                <button class="poppins">Enviar</button>
+                <button class="poppins" onclick="enviar()" >Enviar</button>
         </div>
     </div>
     <hr>
@@ -54,6 +58,6 @@
         </div>
         <p class="center poppins">Vitor Sales 2020&copy. Todos os direitos reservados</p>
     </footer>
-   
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
